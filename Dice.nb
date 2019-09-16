@@ -1,0 +1,59 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      1595,         51]
+NotebookOptionsPosition[      1304,         38]
+NotebookOutlinePosition[      1647,         53]
+CellTagsIndexPosition[      1604,         50]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Dice", "[", 
+    RowBox[{
+     RowBox[{"numberOfDice_Integer:", "1"}], ",", 
+     RowBox[{"numberOfSides_Integer:", "20"}]}], "]"}], ":=", "\n", 
+   RowBox[{"Table", "[", "\n", "\t", 
+    RowBox[{
+     RowBox[{"RandomInteger", "[", "\n", "\t\t", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "numberOfSides"}], "}"}], "\n", "\t", "]"}], ",", 
+     "numberOfDice"}], "\n", "]"}]}], ";"}]], "Code",
+ CellChangeTimes->{{3.7772056542953944`*^9, 3.7772058050805764`*^9}, {
+  3.777205881547099*^9, 3.7772058840535083`*^9}, {3.777205943521964*^9, 
+  3.7772059822155595`*^9}, {3.777206138162696*^9, 3.777206142077239*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"f243eb3a-0576-4db3-bc9e-65e644926c3b"]
+},
+WindowSize->{1484, 917},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 11, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 739, 16, 141, "Code",ExpressionUUID->"f243eb3a-0576-4db3-bc9e-65e644926c3b"]
+}
+]
+*)
+
