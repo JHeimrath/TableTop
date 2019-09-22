@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     15648,        334]
-NotebookOptionsPosition[     15257,        320]
-NotebookOutlinePosition[     15600,        335]
-CellTagsIndexPosition[     15557,        332]
+NotebookDataLength[     15886,        334]
+NotebookOptionsPosition[     15495,        320]
+NotebookOutlinePosition[     15838,        335]
+CellTagsIndexPosition[     15795,        332]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,7 +24,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"Options", "[", "TableTop", "]"}], ":=", 
     RowBox[{"{", 
-     RowBox[{"ImageSize", "\[Rule]", "300"}], "}"}]}], ";"}], 
+     RowBox[{"\"\<CellSize\>\"", "\[Rule]", "100"}], "}"}]}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
@@ -62,16 +62,7 @@ Cell[BoxData[{
             RowBox[{"desert", "\[Rule]", 
              RowBox[{
              "Import", "[", "\"\<C:/GitHub/TableTop/Graphics/desert.png\>\"", 
-              "]"}]}], "\n", "\t\t\t\t\t\t\t\t", 
-            RowBox[{"(*", 
-             RowBox[{"\"\<desert\>\"", "->", 
-              RowBox[{
-               RowBox[{"Import", "[", 
-                RowBox[{
-                "\"\<https://github.com/JHeimrath/TableTop/blob/master/\
-Graphics/desert.png\>\"", ",", "\"\<Images\>\""}], "]"}], "[", 
-               RowBox[{"[", "2", "]"}], "]"}]}], "*)"}], ",", "\n", 
-            "\t\t\t\t\t\t\t\t", 
+              "]"}]}], ",", "\n", "\t\t\t\t\t\t\t\t", 
             RowBox[{"mountains", "\[Rule]", 
              RowBox[{
              "Import", "[", 
@@ -96,7 +87,16 @@ Graphics/desert.png\>\"", ",", "\"\<Images\>\""}], "]"}], "[",
             RowBox[{"forest", "->", 
              RowBox[{
              "Import", "[", "\"\<C:/GitHub/TableTop/Graphics/forest.png\>\"", 
-              "]"}]}]}], "\n", "\t\t\t\t\t\t", "]"}]}], ",", "\n", "\t\t\t", 
+              "]"}]}]}], "\n", "\t\t\t\t\t\t\t\t", 
+           RowBox[{"(*", 
+            RowBox[{"grass", "->", 
+             RowBox[{
+              RowBox[{"Import", "[", 
+               RowBox[{
+               "\"\<https://github.com/JHeimrath/TableTop/blob/master/\
+Graphics/grass.png\>\"", ",", "\"\<Images\>\""}], "]"}], "[", 
+              RowBox[{"[", "2", "]"}], "]"}]}], "*)"}], "\n", "\t\t\t\t\t\t", 
+           "]"}]}], ",", "\n", "\t\t\t", 
          RowBox[{"d1", "=", 
           RowBox[{
            RowBox[{"Dimensions", "[", "terrain", "]"}], "[", 
@@ -151,8 +151,6 @@ Graphics/desert.png\>\"", ",", "\"\<Images\>\""}], "]"}], "[",
                 RowBox[{"i", "+", "1"}], ",", 
                 RowBox[{"j", "+", "1"}]}], "]"}], "]"}], "]"}], "]"}], ",", 
            "\n", "\t\t\t\t\t", 
-           RowBox[{"TextureCoordinateScaling", "\[Rule]", "False"}], ",", 
-           "\n", "\t\t\t\t\t", 
            RowBox[{"Translate", "[", "\n", "\t\t\t\t\t\t", 
             RowBox[{
              RowBox[{"Polygon", "[", "\n", "\t\t\t\t\t\t\t", 
@@ -188,7 +186,10 @@ Graphics/desert.png\>\"", ",", "\"\<Images\>\""}], "]"}], "[",
            RowBox[{"d2", "-", "1"}]}], "}"}]}], "]"}]}], "\n", "\t", "]"}], 
      ",", "\n", "\t", 
      RowBox[{"ImageSize", "\[Rule]", 
-      RowBox[{"OptionValue", "[", "ImageSize", "]"}]}]}], 
+      RowBox[{
+       RowBox[{"Max", "[", 
+        RowBox[{"Dimensions", "[", "terrain", "]"}], "]"}], "*", 
+       RowBox[{"OptionValue", "[", "\"\<CellSize\>\"", "]"}]}]}]}], 
     "\[IndentingNewLine]", "]"}]}], ";"}]}], "Code",
  CellChangeTimes->{{3.772605853911332*^9, 3.772606267367628*^9}, {
    3.772606327784343*^9, 3.7726063922500114`*^9}, {3.7726064324843116`*^9, 
@@ -248,8 +249,12 @@ Graphics/desert.png\>\"", ",", "\"\<Images\>\""}], "]"}], "[",
    3.777655031310062*^9}, {3.7776551406858463`*^9, 3.7776551485267963`*^9}, {
    3.777655399562214*^9, 3.7776554038588448`*^9}, {3.777656024933281*^9, 
    3.777656058814004*^9}, {3.777656167208555*^9, 3.7776561784826818`*^9}, {
-   3.7776562623252945`*^9, 3.777656317732633*^9}},
- CellLabel->"In[16]:=",ExpressionUUID->"493557fe-2c08-431b-a66f-28667ca6526d"],
+   3.7776562623252945`*^9, 3.777656317732633*^9}, {3.777661790296604*^9, 
+   3.7776618023979845`*^9}, {3.777662034227357*^9, 3.7776620365037565`*^9}, {
+   3.778182327352562*^9, 3.7781823491229057`*^9}, {3.7781825188360662`*^9, 
+   3.778182578744568*^9}, {3.7781827533394566`*^9, 3.77818278577069*^9}, {
+   3.7781828406251717`*^9, 3.7781828453270273`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"493557fe-2c08-431b-a66f-28667ca6526d"],
 
 Cell[BoxData[{
  RowBox[{
@@ -305,18 +310,13 @@ Cell[BoxData[{
        "mountains", ",", "forest", ",", "forest", ",", "forest", ",", 
        "forest"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
   ";"}], "\[IndentingNewLine]", 
- RowBox[{"TableTop", "[", 
-  RowBox[{"world", ",", 
-   RowBox[{"ImageSize", "\[Rule]", 
-    RowBox[{
-     RowBox[{"Max", "[", 
-      RowBox[{"Dimensions", "[", "world", "]"}], "]"}], "*", "100"}]}]}], 
-  "]"}]}], "Input",
+ RowBox[{"TableTop", "[", "world", "]"}]}], "Input",
  CellChangeTimes->{{3.7776562358956823`*^9, 3.7776562429628177`*^9}, {
   3.7776563466441154`*^9, 3.7776568104513454`*^9}, {3.7776568408711863`*^9, 
   3.7776571759012375`*^9}, {3.7776572099518814`*^9, 3.7776572798861656`*^9}, {
-  3.777657310933792*^9, 3.777657342266429*^9}},
- CellLabel->"In[59]:=",ExpressionUUID->"bc2e588c-4554-42f7-9d6f-b0e715b44b07"]
+  3.777657310933792*^9, 3.777657342266429*^9}, {3.7776618219990325`*^9, 
+  3.777661822179526*^9}, {3.7776625283714933`*^9, 3.7776625443489456`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"bc2e588c-4554-42f7-9d6f-b0e715b44b07"]
 },
 WindowSize->{1484, 917},
 WindowMargins->{{-8, Automatic}, {Automatic, 0}},
@@ -334,8 +334,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[561, 20, 11595, 231, 753, "Code",ExpressionUUID->"493557fe-2c08-431b-a66f-28667ca6526d"],
-Cell[12159, 253, 3094, 65, 219, "Input",ExpressionUUID->"bc2e588c-4554-42f7-9d6f-b0e715b44b07"]
+Cell[561, 20, 11901, 236, 735, "Code",ExpressionUUID->"493557fe-2c08-431b-a66f-28667ca6526d"],
+Cell[12465, 258, 3026, 60, 219, "Input",ExpressionUUID->"bc2e588c-4554-42f7-9d6f-b0e715b44b07"]
 }
 ]
 *)
